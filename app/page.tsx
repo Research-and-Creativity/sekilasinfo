@@ -1,6 +1,7 @@
 import Image from "next/image"
 import type { Metadata } from "next"
-import { Instagram, Mail, ExternalLink, MessageSquare, Music } from "lucide-react"
+import { Instagram, Mail, ExternalLink, MessageSquare } from "lucide-react"
+import { FaTiktok } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "S1 Rekayasa Perangkat Lunak - Telkom University Purwokerto",
@@ -32,7 +33,7 @@ export default function Home() {
                 <div className="absolute inset-0 bg-gradient-to-r from-gray-600 to-gray-700 rounded-full blur-2xl opacity-30"></div>
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-gray-400 shadow-2xl ring-4 ring-gray-700/50">
                   <Image
-                    src="/s1-rpl-logo.png"
+                    src="/image/sekilasinfo-logo.webp"
                     alt="S1 Rekayasa Perangkat Lunak Logo"
                     fill
                     className="object-contain bg-white"
@@ -79,7 +80,7 @@ export default function Home() {
                   aria-label="TikTok"
                 >
                   <div className="bg-gradient-to-br from-gray-700 to-gray-800 p-3 rounded-full shadow-lg hover:shadow-white/30 group-hover:shadow-2xl transition-all border border-gray-600">
-                    <Music className="w-5 h-5 text-white" />
+                    <FaTiktok className="w-5 h-5 text-white" />
                   </div>
                 </a>
                 <a
@@ -104,8 +105,10 @@ export default function Home() {
               <a href="https://wa.me/+6285190456101" target="_blank" rel="noopener noreferrer" className="group block">
                 <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mr-4 shadow-lg">
-                      <MessageSquare className="w-6 h-6 text-white" />
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
+                      <div className="w-12 h-12 relative">
+                        <Image src="/image/setupcare-logo.webp" alt="SetupCare Logo" fill className="object-cover" />
+                      </div>
                     </div>
                     <div className="flex-grow">
                       <h3 className="font-bold text-white text-base group-hover:text-gray-100 transition-colors">
@@ -191,6 +194,84 @@ export default function Home() {
                       </h3>
                       <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
                         Kunjungi situs TUP
+                      </p>
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="https://s.id/aduanSE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
+                      <div className="w-12 h-12 relative">
+                        <Image src="/image/sepikup-logo.webp" alt="Sepikup Logo" fill className="object-cover" />
+                      </div>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="font-bold text-white text-base group-hover:text-gray-100 transition-colors">
+                        Aduan Software Engineering
+                      </h3>
+                      <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
+                        Kunjungi Situs Aduan Software Engineering
+                      </p>
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="https://drive.google.com/drive/folders/1pqb7MLx719IPVtrnX89bnGMXKqBm5CDT?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
+                      <div className="w-6 h-6 relative">
+                        <Image src="/s1-rpl-logo.png" alt="TUP Logo" fill className="object-contain" />
+                      </div>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="font-bold text-white text-base group-hover:text-gray-100 transition-colors">
+                        Kebutuhan Print Mahasiswa
+                      </h3>
+                      <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
+                        Kunjungi Situs Kebutuhan Print Mahasiswa
+                      </p>
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </a>
+              
+              <a
+                href="http://tel-u.ac.id/prestasimahasiswase"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
+                      <div className="w-6 h-6 relative">
+                        <Image src="/s1-rpl-logo.png" alt="TUP Logo" fill className="object-contain" />
+                      </div>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="font-bold text-white text-base group-hover:text-gray-100 transition-colors">
+                        Laporan Prestasi Mahasiswa
+                      </h3>
+                      <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
+                        Kunjungi Situs Laporan Prestasi Mahasiswa
                       </p>
                     </div>
                     <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
