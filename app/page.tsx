@@ -1,12 +1,13 @@
-import Image from "next/image"
-import type { Metadata } from "next"
-import { Instagram, Mail, ExternalLink, MessageSquare } from "lucide-react"
+import Image from "next/image";
+import type { Metadata } from "next";
+import { Instagram, Mail, ExternalLink, MessageSquare } from "lucide-react";
 import { FaTiktok } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "S1 Rekayasa Perangkat Lunak - Telkom University Purwokerto",
-  description: "Program Studi S1 Rekayasa Perangkat Lunak Fakultas Informatika Telkom University Purwokerto",
-}
+  description:
+    "Program Studi S1 Rekayasa Perangkat Lunak Fakultas Informatika Telkom University Purwokerto",
+};
 
 export default function Home() {
   return (
@@ -52,11 +53,17 @@ export default function Home() {
 
               {/* Subtitle */}
               <div className="text-gray-300 max-w-sm text-center space-y-2">
-                <p className="text-xs text-gray-300">Software Engineering Knowledge & Information Service Online</p>
+                <p className="text-xs text-gray-300">
+                  Software Engineering Knowledge & Information Service Online
+                </p>
                 <div className="h-2"></div>
-                <p className="text-base font-semibold text-gray-200">The Art of Code</p>
+                <p className="text-base font-semibold text-gray-200">
+                  The Art of Code
+                </p>
                 <p className="text-xs text-gray-300">S1 Software Engineering</p>
-                <p className="text-xs text-gray-300">Telkom University Purwokerto</p>
+                <p className="text-xs text-gray-300">
+                  Telkom University Purwokerto
+                </p>
               </div>
 
               {/* Social Media Icons */}
@@ -102,12 +109,53 @@ export default function Home() {
 
             {/* Service Links Section */}
             <div className="space-y-4">
-              <a href="https://wa.me/+6285190456101" target="_blank" rel="noopener noreferrer" className="group block">
+              <a
+                href="https://s.id/aduanSE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
+                <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
+                      <div className="w-12 h-12 relative">
+                        <Image
+                          src="/image/sepikup-logo.webp"
+                          alt="Sepikup Logo"
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex-grow">
+                      <h3 className="font-bold text-white text-base group-hover:text-gray-100 transition-colors">
+                        Aduan Software Engineering
+                      </h3>
+                      <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
+                        Kunjungi Situs Aduan Software Engineering
+                      </p>
+                    </div>
+                    <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/+6285190456101"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group block"
+              >
                 <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70">
                   <div className="flex items-center">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
                       <div className="w-12 h-12 relative">
-                        <Image src="/image/setupcare-logo.webp" alt="SetupCare Logo" fill className="object-cover" />
+                        <Image
+                          src="/image/setupcare-logo.webp"
+                          alt="SetupCare Logo"
+                          fill
+                          className="object-cover"
+                        />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -131,9 +179,14 @@ export default function Home() {
               >
                 <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-yellow-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-orange-400 to-yellow-600 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
-                      <div className="w-6 h-6 relative">
-                        <Image src="/s1-rpl-logo.png" alt="Program Logo" fill className="object-contain" />
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
+                      <div className="w-12 h-12 relative">
+                        <Image
+                          src="/image/sepikup-logo.webp"
+                          alt="Sepikup Logo"
+                          fill
+                          className="object-cover"
+                        />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -141,7 +194,7 @@ export default function Home() {
                         Situs Program Studi
                       </h3>
                       <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
-                        Info lengkap program
+                        Info lengkap program studi
                       </p>
                     </div>
                     <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
@@ -157,9 +210,14 @@ export default function Home() {
               >
                 <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-red-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
                   <div className="flex items-center">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
-                      <div className="w-6 h-6 relative">
-                        <Image src="/s1-rpl-logo.png" alt="SMB Logo" fill className="object-contain" />
+                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
+                      <div className="w-12 h-12 relative">
+                        <Image
+                          src="/image/sekilasinfo-logo.webp"
+                          alt="Sepikup Logo"
+                          fill
+                          className="object-cover"
+                        />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -184,8 +242,13 @@ export default function Home() {
                 <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
                   <div className="flex items-center">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
-                      <div className="w-6 h-6 relative">
-                        <Image src="/s1-rpl-logo.png" alt="TUP Logo" fill className="object-contain" />
+                      <div className="w-12 h-12 relative">
+                        <Image
+                          src="/image/sekilasinfo-logo.webp"
+                          alt="Sepikup Logo"
+                          fill
+                          className="object-cover"
+                        />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -202,32 +265,6 @@ export default function Home() {
               </a>
 
               <a
-                href="https://s.id/aduanSE"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block"
-              >
-                <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
-                  <div className="flex items-center">
-                    <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
-                      <div className="w-12 h-12 relative">
-                        <Image src="/image/sepikup-logo.webp" alt="Sepikup Logo" fill className="object-cover" />
-                      </div>
-                    </div>
-                    <div className="flex-grow">
-                      <h3 className="font-bold text-white text-base group-hover:text-gray-100 transition-colors">
-                        Aduan Software Engineering
-                      </h3>
-                      <p className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">
-                        Kunjungi Situs Aduan Software Engineering
-                      </p>
-                    </div>
-                    <ExternalLink className="w-4 h-4 text-gray-400 opacity-0 group-hover:opacity-100 transition-all transform group-hover:translate-x-1" />
-                  </div>
-                </div>
-              </a>
-
-              <a
                 href="https://drive.google.com/drive/folders/1pqb7MLx719IPVtrnX89bnGMXKqBm5CDT?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -236,8 +273,13 @@ export default function Home() {
                 <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
                   <div className="flex items-center">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
-                      <div className="w-6 h-6 relative">
-                        <Image src="/s1-rpl-logo.png" alt="TUP Logo" fill className="object-contain" />
+                      <div className="w-12 h-12 relative">
+                        <Image
+                          src="/image/sekilasinfo-logo.webp"
+                          alt="Sepikup Logo"
+                          fill
+                          className="object-cover"
+                        />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -252,7 +294,7 @@ export default function Home() {
                   </div>
                 </div>
               </a>
-              
+
               <a
                 href="http://tel-u.ac.id/prestasimahasiswase"
                 target="_blank"
@@ -262,8 +304,13 @@ export default function Home() {
                 <div className="bg-gradient-to-br from-gray-700/50 to-gray-800/50 border border-gray-600/30 hover:border-gray-500 rounded-2xl p-4 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10 hover:translate-y-[-2px] backdrop-blur-sm group-hover:bg-gradient-to-br group-hover:from-gray-700/70 group-hover:to-gray-800/70 overflow-hidden">
                   <div className="flex items-center">
                     <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mr-4 shadow-lg overflow-hidden">
-                      <div className="w-6 h-6 relative">
-                        <Image src="/s1-rpl-logo.png" alt="TUP Logo" fill className="object-contain" />
+                      <div className="w-12 h-12 relative">
+                        <Image
+                          src="/image/sekilasinfo-logo.webp"
+                          alt="Sepikup Logo"
+                          fill
+                          className="object-cover"
+                        />
                       </div>
                     </div>
                     <div className="flex-grow">
@@ -285,7 +332,9 @@ export default function Home() {
 
             {/* Academic Resources Section */}
             <div className="mb-8">
-              <h2 className="text-lg font-bold text-white mb-4 text-center">Sumber Akademik</h2>
+              <h2 className="text-lg font-bold text-white mb-4 text-center">
+                Sumber Akademik
+              </h2>
               <div className="space-y-3">
                 <a
                   href="https://baa.telkomuniversity.ac.id/kalender-akademik-2-2/"
@@ -413,7 +462,9 @@ export default function Home() {
 
             {/* Supporting Applications Section */}
             <div className="mb-8">
-              <h2 className="text-lg font-bold text-white mb-4 text-center">Aplikasi Penunjang</h2>
+              <h2 className="text-lg font-bold text-white mb-4 text-center">
+                Aplikasi Penunjang
+              </h2>
               <div className="space-y-3">
                 <a
                   href="https://toss.telkomuniversity.ac.id/login"
@@ -456,8 +507,12 @@ export default function Home() {
 
             {/* Footer */}
             <div className="text-center">
-              <p className="text-xs text-gray-400">© 2025 S1 Rekayasa Perangkat Lunak</p>
-              <p className="text-xs text-gray-500 mt-1">Telkom University Purwokerto</p>
+              <p className="text-xs text-gray-400">
+                © 2025 S1 Rekayasa Perangkat Lunak
+              </p>
+              <p className="text-xs text-gray-500 mt-1">
+                Telkom University Purwokerto
+              </p>
             </div>
           </div>
 
@@ -466,5 +521,5 @@ export default function Home() {
         </div>
       </div>
     </main>
-  )
+  );
 }
